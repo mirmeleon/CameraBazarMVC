@@ -1,0 +1,5 @@
+C:\Users\Dell\Downloads\Softuni\Asp.Net\domashni reshenia Bojo\3. CSharp-Frameworks-ASPNET-Razor-Engine-Exercises-Solution-Part-2\CameraBazaar\Models\bin\Debug\CameraBazaar.Models.dll
+C:\Users\Dell\Downloads\Softuni\Asp.Net\domashni reshenia Bojo\3. CSharp-Frameworks-ASPNET-Razor-Engine-Exercises-Solution-Part-2\CameraBazaar\Models\bin\Debug\CameraBazaar.Models.pdb
+C:\Users\Dell\Downloads\Softuni\Asp.Net\domashni reshenia Bojo\3. CSharp-Frameworks-ASPNET-Razor-Engine-Exercises-Solution-Part-2\CameraBazaar\Models\obj\Debug\CameraBazaar.Models.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Downloads\Softuni\Asp.Net\domashni reshenia Bojo\3. CSharp-Frameworks-ASPNET-Razor-Engine-Exercises-Solution-Part-2\CameraBazaar\Models\obj\Debug\CameraBazaar.Models.dll
+C:\Users\Dell\Downloads\Softuni\Asp.Net\domashni reshenia Bojo\3. CSharp-Frameworks-ASPNET-Razor-Engine-Exercises-Solution-Part-2\CameraBazaar\Models\obj\Debug\CameraBazaar.Models.pdb
