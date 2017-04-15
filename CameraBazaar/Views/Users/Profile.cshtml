@@ -31,7 +31,7 @@ Cameras:
 
             <br />
             <br />
-            @Html.ActionLink("Details", "Details", new { id = vm.Id })
+            @Html.ActionLink("Details", $"Details/{vm.Id}", new { id = vm.Id })
 
             @if (vm.Quantity == 0)
             {

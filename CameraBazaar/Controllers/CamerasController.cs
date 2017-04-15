@@ -67,7 +67,7 @@ namespace CameraBazaar.Web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("create")]
-        public ActionResult Create([Bind(Include = "Make,Model,Price,Quantity,MinShutterSpeed,MaxShutterSpeed,MinIso,MaxIso,IsFullFrame,VideoResolution,LightMetering,Description,ImageUrl")] AddCameraBm camera)
+        public ActionResult Create(AddCameraBm camera)
         {
             string sessionId = this.Request.Cookies.Get("sessionId")?.Value;
             if (!AuthenticationManager.IsAuthenticated(sessionId))
@@ -115,7 +115,8 @@ namespace CameraBazaar.Web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("edit/{id}")]
-        public ActionResult Edit([Bind(Include = "Id,Make,Model,Price,Quantity,MinShutterSpeed,MaxShutterSpeed,MinIso,MaxIso,IsFullFrame,VideoResolution,LightMetering,Description,ImageUrl")] EditCameraBm camera)
+       
+        public ActionResult Edit(EditCameraBm camera)
         {
             string sessionId = this.Request.Cookies.Get("sessionId")?.Value;
             if (!AuthenticationManager.IsAuthenticated(sessionId))

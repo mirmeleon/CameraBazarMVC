@@ -16,25 +16,37 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Application name", "All", "Cameras", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                   
+                    <li>@Html.ActionLink("Cameras", "All", "Cameras", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("New Camera", "Create", "Cameras", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Edit Profile", "EditProfile", "Users", new { area = "" }, null)</li>
+
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>@ViewBag.Username</li>
-                    <li>
-                        @Html.ActionLink("Register", "Register", "Users")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Login", "Login", "Users")
-                    </li>
-                    <li>
-                        <form method="post" action="/users/logout/">
-                            <input type="submit" value="Logout" class="form-control" />
-                        </form>
-                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            @Html.ActionLink("Register", "Register", "Users")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Login", "Login", "Users")
+                        </li>
+                    }
+                  
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            <form method="post" action="/users/logout/">
+                                <input type="submit" value="Logout" class="form-control" />
+                            </form>
+                        </li>
+                    }
+                  
                 </ul>
             </div>
         </div>
